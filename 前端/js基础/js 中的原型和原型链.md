@@ -80,3 +80,4 @@ console.log(o.d); // undefined
 - 函数的 `prototype` 是一个对象
 - 对象的 `__proto__` 属性指向原型， `__proto__` 将对象和原型连接起来组成了原型链
 - 对象里找不到的属性会到原型里去找
+
