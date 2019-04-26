@@ -89,6 +89,27 @@ console.log(foo1) // 访问不到报错，foo1 is not defined
 	
 ```
 
-## function a() {} 与 const a = function() {}  
+## function a() {} 与 const a = function() {} 
 
-## function 和 箭头函数 () => {}
+```js
+a()
+function a() {
+    console.log('yo')
+}
+// 正常执行，不报错
+```
+
+```js
+a()
+const a = function() {
+    console.log('yo')
+}
+// 报错， a is not defined
+```
+```js
+a()
+var a = function() {
+    console.log('yo')
+}
+// a is not a function
+```
